@@ -43,13 +43,15 @@ const CarsShowcase = () => {
                 </h3>
                 <div className="space-y-1 mb-4">
                   <p className="text-2xl font-bold text-purple-600">
-                    {car.price || 'Price on Request'}
+                  {car.price ? `${Number(car.price).toLocaleString()}$` : 'Price on Request'}
+
+
                   </p>
-                  <p className="text-gray-600">Mileage: {car.mileage} km</p>
+                  <p className="text-gray-600">Mileage: {car.mileage} mi</p>
                   <p className="text-gray-600">Year: {car.year}</p>
                 </div>
                 <button className="w-full bg-gradient-to-r from-purple-600 to-pink-600 hover:from-purple-700 hover:to-pink-700 text-white py-3 rounded-xl font-semibold transition-all duration-300 transform hover:scale-105">
-                  Schedule Viewing
+                  View more
                 </button>
               </div>
             </div>

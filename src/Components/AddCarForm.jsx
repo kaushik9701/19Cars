@@ -169,7 +169,7 @@ setImageUrls([]);
   accept="image/*"
   multiple
   onChange={handleImageChange}
-  className="mb-2"
+  className="mb-2 bg-blue-400 w-50 rounded-full px-5 mx-3"
 />
         <button
           type="button"
