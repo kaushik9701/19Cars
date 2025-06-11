@@ -4,7 +4,7 @@ import { db } from '../firebase/firebaseConfig';
 import { collection, getDocs } from 'firebase/firestore';
 import CarsShowcase from '../Components/CarShowcase';
 import { motion } from 'framer-motion';
-import logo from '../assets/logo.png';
+import home from '../assets/home.png';
 import { useNavigate } from 'react-router-dom';
 import Footer from '../Components/footer';
 const Home = () => {
@@ -47,15 +47,15 @@ const Home = () => {
           >
             <div className="flex justify-center">
             <motion.img
-  src={logo}
-  alt="Logo"
-  className="h-24 md:h-40 object-contain" // Increased from h-16/md:h-24 to h-24/md:h-40
-  initial={{ opacity: 0, scale: 0.95 }}
-  animate={{ opacity: 1, scale: 1 }}
-  transition={{ duration: 0.5, delay: 0.2 }}
-/>
+              src={home}
+              alt="home"
+              className="h-24 md:h-52 rounded-3xl object-contain" // Increased from h-16/md:h-24 to h-24/md:h-40
+              initial={{ opacity: 0, scale: 0.95 }}
+              animate={{ opacity: 1, scale: 1 }}
+              transition={{ duration: 0.5, delay: 0.2 }}
+            />
 
-</div>
+            </div>
 
             
             <motion.p 

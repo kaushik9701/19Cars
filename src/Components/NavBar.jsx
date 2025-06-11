@@ -5,7 +5,7 @@ import { useAuth } from '../Context/AuthContext';
 import { signOut } from 'firebase/auth';
 import { auth } from '../firebase/firebaseConfig';
 import { Menu, X } from 'lucide-react'; // Optional icon library
-import logo from '../assets/logo.png'; // adjust the path as needed
+import logo from "../assets/logo.jpg"
 
 
 const Navbar = () => {
